@@ -18,5 +18,6 @@ public class App {
         TriangleFactory triangleFactory = new TriangleFactory();
         Shape triangle = triangleFactory.createShape();
         triangle.draw();
+        Shape.shape();
     }
 }

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Gun {
@@ -6,7 +7,7 @@ public class Gun {
 
     public void fireInPool() {
         BulletPool pool = new BulletPool();
-        List<Bullet> plist = new ArrayList<>();
+        List<Bullet> plist = new LinkedList<>();
         for (int i = 0; i < bulletCount; i++) {
             Bullet p = pool.newItem();
             p.setPosition(0);
